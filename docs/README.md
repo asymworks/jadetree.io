@@ -6,12 +6,12 @@ tagline: 'Self Hosted Personal Budgeting Platform'
 actionText: Get Started →
 actionLink: /guide/
 features:
-- title: Simple Budgeting
-  details: Straightforward interface gets out of the way to let you focus on giving your dollars a job.
-- title: Multi-Currency
-  details: Supports multiple currencies out of the box to support a global audience (UI support coming soon).
 - title: Self-Hosted
   details: Runs as a local web application to keep your data in your hands and provide full configurability.
+- title: Mobile Friendly
+  details: Designed to look great on desktop and mobile screens so you can budget on the go.
+- title: Multi-Currency
+  details: Supports multiple currencies out of the box to support a global audience (UI support coming soon).
 footer: BSD Licensed | Copyright © 2019-present Asymworks, LLC
 ---
 
