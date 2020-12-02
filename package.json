@@ -1,0 +1,16 @@
+{
+  "name": "jadetree.io",
+  "version": "1.0.0",
+  "description": "Jade Tree Documentation Site",
+  "repository": "https://github.com/asymworks/jadetree.io",
+  "author": "Jonathan Krauss",
+  "license": "BSD-3-Clause",
+  "private": true,
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "devDependencies": {
+    "vuepress": "^1.7.1"
+  }
+}
