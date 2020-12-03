@@ -41,6 +41,7 @@ module.exports = {
             },
           ],
         },
+        'config',
       ],
       '/ref/': [
         'configuration',
