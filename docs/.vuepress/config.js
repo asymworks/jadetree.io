@@ -36,7 +36,7 @@ module.exports = {
             'start_budget',
             'start_transactions',
             {
-              title: 'Reports Page Overview (Coming Soon)',
+              title: 'Reports Page (Coming Soon)',
               collapsable: false,
             },
           ],

@@ -1,3 +1,3 @@
-# Budget Page Overview
+# Budget Page
 
 Coming Soon

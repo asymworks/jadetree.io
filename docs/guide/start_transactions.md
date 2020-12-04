@@ -1,3 +1,3 @@
-# Transactions Page Overview
+# Transactions Page
 
 Coming Soon

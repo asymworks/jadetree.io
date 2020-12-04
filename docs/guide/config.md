@@ -232,7 +232,7 @@ File "{{ trace.filename }}", line {{ trace.lineno }}, in {{ trace.name }}
 {% endif %}
 ```
 
-## API Security Configuration
+## Security Configuration
 
 These configuration settings are used to secure the Javascript Web Tokens sent
 sent by the client to the API server for authentication.
@@ -263,8 +263,17 @@ $ LC_CTYPE=C tr -dc A-Za-z0-9 < /dev/urandom | fold -w ${1:-64} | head -n 1
 
 ## Server Settings
 
-These settings are only used during initial server setup, and can be used to
-auto-populate fields in the Server Setup screen.
+The reported backend server name and version number can be overridden with the
+`APP_NAME` and `APP_VERSION` configuration variables. By default, these are
+loaded from the `pyproject.toml` file in the server distribution.
+
+| Configuration Key | Description |
+|-|-|
+| `APP_NAME` | Set the Server Name reported at the `/version` API Endpoint |
+| `APP_VERSION` | Set the Server Version reported at the `/version` API Endpoint |
+
+The following settings are only used during initial server setup, and can be
+used to auto-populate fields in the Server Setup screen.
 
 | Configuration Key | Description |
 |-|-|

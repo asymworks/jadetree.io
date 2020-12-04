@@ -6,7 +6,24 @@ which gives you total control of your data.  Follow the instructions in the
 [Installation Guide](./install.html) to install and set up your Jade Tree server
 with Docker, or jump right in to the [Getting Started](./start_login.html) section.
 
-Keep reading to learn a bit more about the Jade Tree budgeting philosophy.
+## Quick Start
+
+Download and install [Docker][1], [Docker Compose][2] and [Git][3].  Run the
+following commands:
+
+```sh
+$ git clone https://github.com/asymworks/jadetree-backend.git jadetree
+$ docker-compose -f jadetree/docker-compose.yml up -d
+$ docker-compose -f jadetree/docker-compose.yml exec backend /home/jadetree/docker-entry.sh db init
+$ docker-compose -f jadetree/docker-compose.yml restart backend
+```
+
+Navigate to (http://localhost:8733)[http://localhost:8733] to start setting up
+your Jade Tree server.
+
+[1]: https://docs.docker.com/get-docker/
+[2]: https://docs.docker.com/compose/install/
+[3]: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
 
 ## Budgeting Philosophy
 

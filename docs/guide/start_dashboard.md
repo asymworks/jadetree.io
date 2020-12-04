@@ -1,3 +1,3 @@
-# Dashboard Overview
+# Dashboard
 
 Coming Soon
