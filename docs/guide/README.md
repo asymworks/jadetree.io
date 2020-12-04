@@ -18,8 +18,8 @@ $ docker-compose -f jadetree/docker-compose.yml exec backend /home/jadetree/dock
 $ docker-compose -f jadetree/docker-compose.yml restart backend
 ```
 
-Navigate to (http://localhost:8733)[http://localhost:8733] to start setting up
-your Jade Tree server.
+Navigate to [http://localhost:8733](http://localhost:8733) to start
+[setting up]('install.html#server-setup') your Jade Tree server.
 
 [1]: https://docs.docker.com/get-docker/
 [2]: https://docs.docker.com/compose/install/
