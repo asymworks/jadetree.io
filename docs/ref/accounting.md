@@ -89,7 +89,7 @@ foreign exchange transactions in one number. This idea of a trading account can
 also be generalized to other variable-priced assets such as securities, although
 there is not currently support for that in Jade Tree.
 
-A thorough discussion of the issue is presented by [Peter Sellenger][1], which
+A thorough discussion of the issue is presented by [Peter Selinger][1], which
 informed the development of the Jade Tree foreign currency model.
 
 [1]: https://www.mathstat.dal.ca/~selinger/accounting/tutorial.html
