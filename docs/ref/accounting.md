@@ -61,3 +61,35 @@ and credit card, respectively.
 Jade Tree's accounting subsystem can support complex transactions involving
 multiple accounts and currencies, and more detail can be found in the developer
 documentation, but the tenants here still hold for all of them.
+
+## Multiple Currencies
+
+To support multiple currencies for a user's accounts, for example when budgeting
+in a local currency while using bank accounts in a foreign currency, Jade Tree
+implements a special Currency Trading account to handle transactions when the
+exchange rate can vary over time and cause the double-entry accounting method to
+become unbalanced.  
+
+For a specific example, consider a case where a user transfers US$100 from a US
+checking account into a savings account in Europe. The day the transfer is made,
+the exchange rate is US$1.00 = €0.80, and the savings account value grows by
+€80.00. A week later the exchange rate is now $1.00 = €0.75, so our
+transaction is now unbalanced since the original $100 no longer equals €80, as
+is recorded by the transaction line, but rather €75. Since double-entry
+accounting relies on both sides of the transaction balancing at all times, we
+have a data integrity problem.
+
+One solution to this is splitting the transaction into two sub-transactions:
+one between the checking account and the Currency Trading account for $100, and
+one between the trading account and the savings account for €80. Each
+sub-transaction now balances at all times: €80 is  always €80 no matter the
+exchange rate. While this may seem like overkill for a single transaction, it
+provides the flexibility to understand the unrealized loss (or gain) of *all*
+foreign exchange transactions in one number. This idea of a trading account can
+also be generalized to other variable-priced assets such as securities, although
+there is not currently support for that in Jade Tree.
+
+A thorough discussion of the issue is presented by [Peter Sellenger][1], which
+informed the development of the Jade Tree foreign currency model.
+
+[1]: https://www.mathstat.dal.ca/~selinger/accounting/tutorial.html
